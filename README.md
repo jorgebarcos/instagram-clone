@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Instagram Clone with React, Firebase
+Instagram Clone with React, Firebase, material ui
 
 ## Available Scripts
 
