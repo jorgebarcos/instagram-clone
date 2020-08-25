@@ -2,16 +2,16 @@ import React from 'react'
 import './Post.css'
 import Avatar from '@material-ui/core/Avatar'
 
-const Post = () => {
+const Post = ({username, caption, imageUrl}) => {
     return (
         <div className="post">
             <div className="post__header">
                 <Avatar
-                    className="post_avatar"
+                    className="post__avatar"
                     alt="Renzito"
                     src="/static/images/avatar/1.jpg"
                 />
-                <h3>Username</h3>
+                <h3>{username}</h3>
 
             </div>
             {/* header => avatar + username */}
@@ -19,11 +19,11 @@ const Post = () => {
 
             {/* image */}
             <img className="post__image" 
-            src="https://www.freecodecamp.org/news/content/images/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png" alt=""/>
+            src={imageUrl} alt=""/>
 
 
             {/* username + caption */}
-            <h4 className="post__text"><strong>clevergazi</strong> WOW daythree of live sessions</h4>
+        <h4 className="post__text"><strong>{username}</strong> {caption}</h4>
 
         </div>
     )
