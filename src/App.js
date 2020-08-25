@@ -1,7 +1,7 @@
-cimport React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Post from './Post';
-timport { db } from './firebase'
+import { db } from './firebase'
 
 function App() {
 
